@@ -1,11 +1,10 @@
 ﻿//main.js
 //var config = require('./config');
 import "./config";
-
 // Test ability to load module with jquery objects:
 import other from './other';
 other();
-console.log("huh");
+console.log("yo!");
 
 //test ability to use fetch & promises in IE11:
 import myfetchIds from './promise';

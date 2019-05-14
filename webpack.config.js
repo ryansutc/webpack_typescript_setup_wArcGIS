@@ -33,7 +33,7 @@ module.exports = {
       new UglifyJsPlugin({
         cache: true,
         parallel: true,
-        sourceMap: false
+        sourceMap: true
       })
     ]
   },
@@ -92,11 +92,11 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebPackPlugin({
       title: "Webpack Typescript Setup Template w. ArcGIS",
-      template: srcFolder + "/index.html",
+      template: srcFolder + "/index.ejs",
       filename: "index.html",
       favicon: srcFolder + "/assets/favicon.ico",
       chunksSortMode: 'none',
-      inlineSource: ".(css)$"
+      //inlineSource: ".(css)$"
     }),
 
     new MiniCssExtractPlugin({
@@ -116,6 +116,7 @@ module.exports = {
     process: false,
     global: false,
     fs: "empty"
-  }
+  },
+  devtool: "inline-source-map"
 
 };
