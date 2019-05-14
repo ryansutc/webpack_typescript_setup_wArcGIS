@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "outDir": "wwwroot/dist",
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "module": "amd",
+    "target": "es5",
+    "jsx": "react",
+    "allowJs": true,
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "noEmitOnError": true
+  }
+}

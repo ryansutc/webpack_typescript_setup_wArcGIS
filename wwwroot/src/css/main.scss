@@ -1,0 +1,26 @@
+// This is the ESRI Styles override and css starting point
+$icomoon-font-path: '~arcgis-js-api/themes/base/icons/fonts' !default;
+// fixes an issue with some dgrid css that can't load but isn't needed (see: https://github.com/Esri/arcgis-webpack-plugin/issues/15)
+$include_RasterSymbologyEditor: false !default;
+
+// exclude non-default widgets
+
+$include_BasemapToggle    : false;
+$include_ColorPicker      : false;
+$include_HorizontalSlider : false;
+$include_Legend           : false;
+$include_RendererSlider   : false;
+$include_Ripple           : false;
+$include_Search           : false;
+$include_Tags             : false;
+$include_DirectLineMeasurement3D: false !default;
+$include_ColorPicker: false !default;
+$include_HorizontalSlider: false !default;
+$include_Print: false !default;
+$include_TimePicker: false !default;
+
+
+//import arcgis styles:
+@import "~arcgis-js-api/themes/light/main.scss";
+// After all ESRI Styles are loaded, bring in our site styles:
+@import "index";
