@@ -49,3 +49,6 @@ Client side changes don't even require you to refresh the Visual Studio debugger
 - [todo]: figure out how to use [@babel/preset-env](https://babeljs.io/docs/en/next/babel-preset-env.html) so we can just specify which browsers we want to support and let babel automatically shim anything not natively supported.
 - [todo]: note steps on how to debug and step thtough built code with webpack running
 - [todo]: make sure hashes are only updating changed files when webpack compiles
+
+## Other limitations:
+- because ArcGIS JavaScript API is loaded using the dojo loader and AMD, you cannot use tree-shaking. See Tom Wayson's blog about that [here](http://tomwayson.com/2018/01/05/loader-of-the-things-one-library-to-load-them-all/)
